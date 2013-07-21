@@ -1,0 +1,34 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    binding_of_caller (0.7.2)
+      debug_inspector (>= 0.0.1)
+    coderay (1.0.9)
+    debug_inspector (0.0.2)
+    interception (0.3)
+    method_source (0.8.1)
+    mime-types (1.23)
+    parallel (0.7.1)
+    pry (0.9.12.2)
+      coderay (~> 1.0.5)
+      method_source (~> 0.8)
+      slop (~> 3.4)
+    pry-rescue (1.1.1)
+      interception (>= 0.3)
+      pry
+    pry-stack_explorer (0.4.9)
+      binding_of_caller (>= 0.7)
+      pry (~> 0.9.11)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
+    slop (3.4.5)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  parallel
+  pry
+  pry-rescue
+  pry-stack_explorer
+  rest-client
