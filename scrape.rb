@@ -56,8 +56,6 @@ def geojson_from_kml_string(kml_string)
   filename        = rand(10000000000).to_s + "temp.kml" 
   kml_file        = File.open(filename, 'w') {|f| f.write(kml_string) }
 
-  raw_response    = RestClient.post(url, :params => {"upload" => File.read(filename)})
-
   request = RestClient::Request.new({
     :method  => :post,
     :url     => url,
